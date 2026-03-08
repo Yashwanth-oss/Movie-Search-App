@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movie Search App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <h1>🎬 Movie Search App</h1>
+    <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search movie...">
+        <button onclick="searchMovie()">Search</button>
+    </div>
+    <!-- Search Suggestions -->
+<div id="suggestions" class="suggestions"></div>
+
+<!-- Movie Details Modal -->
+<div id="movieModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+
+    <img id="modalPoster">
+
+    <div class="modal-info">
+      <h2 id="modalTitle"></h2>
+      <p id="modalYear"></p>
+      <p id="modalRating"></p>
+      <p id="modalActors"></p>
+      <p id="modalPlot"></p>
+    </div>
+
+  </div>
+</div>
+    <div id="movieContainer" class="movie-container"></div>
+    <script src="script.js"></script>
+</body>
+</html>
